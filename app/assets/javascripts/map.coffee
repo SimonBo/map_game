@@ -1,5 +1,6 @@
 
 jQuery ->
+  $('[data-toggle="tooltip"]').tooltip()
   hide_modals= ->
     $('#modal-character').fadeOut(1000)
     $('.bubble').fadeOut(1000)
