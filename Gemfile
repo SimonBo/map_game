@@ -41,8 +41,10 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+  gem 'terminal-notifier-guard', '~> 1.6.1'
 end
 
 gem 'bootstrap-sass', '~> 3.3.4'
 gem 'rails_12factor', group: :production
+gem 'guard-livereload', require: false, group: :development
 ruby "2.2.0"
