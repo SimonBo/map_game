@@ -1,31 +1,26 @@
-<%= render 'layouts/navigation' %>
 
-<div class="container-fluid">
-  <div class="row">
-      <div id="counter">
-        <div id="modals">
-          <div class="col-sm-4 col-sm-offset-1">
-          <%= image_tag('http://cliparts.co/cliparts/rcj/Gg7/rcjGg7dKi.jpg', class: '', id: 'modal-character') %>
-          </div>
-          <div class="col-sm-7">
-          <div class="bubble text-center">
-            <div class="challenge-type"><h1>Wyzwanie</h1></div>
-            <div class="challenge-title"></div>
-            <div class="challenge-rules"></div>
-            <div class="challenge-reward"></div>
-            <button type="button" class="btn btn-primary accept">Akceptuj</button>
-            <button type="button" class="btn btn-danger reject">Odrzuć</button>
-          </div>
-        </div>
-        </div>
+<%= image_tag("http://image.shutterstock.com/display_pic_with_logo/1325314/205634152/stock-vector-cartoon-world-map-205634152.jpg", id: "world", class: '', usemap: "#map", style: "")  %>
 
+<map name="map" id="world_map">
+  <area alt="" name="plane" href="#" shape="poly" coords="349,30,353,26,384,44,411,30,404,25,407,20,419,24,424,18,428,23,423,30,433,37,428,40,418,39,402,55,429,82,424,93,386,68,370,78,359,75,361,67,357,69" />
+  <area alt="" name="house" href="#" shape="poly" coords="187,143,187,128,193,124,202,128,204,142" />
+  <area alt="" name="boat" href="#" shape="poly" coords="84,134,112,116,129,116,150,132,143,140,91,142" />
+</map>
 
-
-
-<%= render 'icons' %>
+<div class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Modal title</h4>
       </div>
-    </div>
-  </div>
-</div>
-
-
+      <div class="modal-body">
+        <p>One fine body&hellip;</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
