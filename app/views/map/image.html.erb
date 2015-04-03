@@ -2,6 +2,17 @@
   <div class="row">
     <div class="col-sm-12">
       <div id="counter">
+        <div id="modals">
+          <%= image_tag('http://cliparts.co/cliparts/rcj/Gg7/rcjGg7dKi.jpg', class: '', id: 'modal-character') %>
+          <div class="panel panel-default" style='display: none;'>
+            <div class="panel-heading">
+              <h3 class="panel-title">Panel title</h3>
+            </div>
+            <div class="panel-body">
+              Panel content
+            </div>
+          </div>
+        </div>
         <%= image_tag("http://www.clker.com/cliparts/5/9/6/3/11954216681952214657molumen_world_map_1.svg.med.png", id: "world-empty", class: '')  %>
         <%= image_tag("http://th09.deviantart.net/fs70/PRE/f/2013/217/f/8/lisa_statue_of_liberty_by_gongryong72-d6gqyqg.png", id: "statue", class: 'icon', data: {title: 'Statue of Liberty', content: 'Climb to the top in 10 sec', toggle: "tooltip", placement: "top"})  %>
         <%= image_tag("http://fc01.deviantart.net/fs71/f/2012/171/e/e/ee14f216a0e966fcb934e8ad27128538-d545viy.png", id: "samurai", class: 'icon', data: {title: 'Samurai', content: 'Defeat him!', toggle: "tooltip", placement: "top"})  %>
@@ -29,3 +40,4 @@
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
+

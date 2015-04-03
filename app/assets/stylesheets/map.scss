@@ -33,5 +33,23 @@
 }
 
 .modal-footer button {
-    margin-top: 30%;
+  margin-top: 30%;
+}
+
+#modal-character {
+  display: none;
+  position: absolute;
+  left: 4%;
+  margin-top: 20%;
+  max-width: 30%;
+  margin-top: 20%;
+  z-index: 1;
+}
+
+.panel {
+  width: 65%;
+  margin-left: 35%;
+  margin-top: 20%;
+  position: absolute;
+  z-index: 1;
 }
