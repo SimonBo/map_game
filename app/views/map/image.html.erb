@@ -1,0 +1,31 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12">
+      <div id="counter">
+        <%= image_tag("http://www.clker.com/cliparts/5/9/6/3/11954216681952214657molumen_world_map_1.svg.med.png", id: "world-empty", class: '')  %>
+        <%= image_tag("http://th09.deviantart.net/fs70/PRE/f/2013/217/f/8/lisa_statue_of_liberty_by_gongryong72-d6gqyqg.png", id: "statue", class: 'icon', data: {title: 'Statue of Liberty', content: 'Climb to the top in 10 sec'})  %>
+        <%= image_tag("http://fc01.deviantart.net/fs71/f/2012/171/e/e/ee14f216a0e966fcb934e8ad27128538-d545viy.png", id: "samurai", class: 'icon', data: {title: 'Samurai', content: 'Defeat him!'})  %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <p>One fine body&hellip;</p>
+      </div>
+      <div class="modal-footer">
+        <%= image_tag('http://cliparts.co/cliparts/rcj/Gg7/rcjGg7dKi.jpg', class: 'pull-left', style: 'width: 50%;') %>
+        <p>Yo can earn: 500 points</p>
+        <button type="button" class="btn btn-primary">Accept</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Reject</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
