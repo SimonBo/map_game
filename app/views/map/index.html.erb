@@ -1,7 +1,26 @@
-<%= image_tag("world-cartoon.jpg", id: "map", class: 'img-responsive center-block', usemap: "#map" )  %>
 
-<map name="map" id="map">
-    <area alt="" title="plane" href="#" shape="poly" coords="349,30,353,26,384,44,411,30,404,25,407,20,419,24,424,18,428,23,423,30,433,37,428,40,418,39,402,55,429,82,424,93,386,68,370,78,359,75,361,67,357,69" />
-    <area alt="" title="house" href="#" shape="poly" coords="187,143,187,128,193,124,202,128,204,142" />
-    <area alt="" title="boat" href="#" shape="poly" coords="84,134,112,116,129,116,150,132,143,140,91,142" />
+<%= image_tag("world-cartoon.jpg", id: "world", class: '', usemap: "#map", style: "")  %>
+
+<map name="map" id="world_map">
+  <area alt="" name="plane" href="#" shape="poly" coords="349,30,353,26,384,44,411,30,404,25,407,20,419,24,424,18,428,23,423,30,433,37,428,40,418,39,402,55,429,82,424,93,386,68,370,78,359,75,361,67,357,69" />
+  <area alt="" name="house" href="#" shape="poly" coords="187,143,187,128,193,124,202,128,204,142" />
+  <area alt="" name="boat" href="#" shape="poly" coords="84,134,112,116,129,116,150,132,143,140,91,142" />
 </map>
+
+<div class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <p>One fine body&hellip;</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
