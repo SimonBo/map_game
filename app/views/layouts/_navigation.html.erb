@@ -16,6 +16,8 @@
     <ul class="nav navbar-nav">
       <li class="active"><a href="#">Mapa <span class="sr-only">(current)</span></a></li>
       <li><a href="#">Szkolne Dolary: 500$</a></li>
+      <li><%= link_to "Reset swinki", piggy_banks_destroy_all_path, remote: true, method: :delete%></li>
+      <li><a href="#" id='message' style='font-size: 35px;'>Wybierz skarbonke</a></li>
     </ul>
   </div>
 </div>

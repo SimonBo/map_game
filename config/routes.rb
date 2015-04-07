@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  delete 'piggy_banks/destroy_all' => 'piggy_banks#destroy_all'
+  resources :piggy_banks
+
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

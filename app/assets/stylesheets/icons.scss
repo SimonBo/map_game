@@ -1,0 +1,32 @@
+.icon {
+  /*-webkit-animation-iteration-count: infinite;*/
+  max-width: 6%;
+  position: absolute;
+  &:hover {
+    cursor: pointer;
+  }
+}
+#statue {
+  margin-top: -38%;
+  margin-left: 20%;
+}
+
+#samurai {
+  margin-top: -34%;
+  margin-left: 80%;
+}
+
+#piggy-bank-1 {
+  margin-top: -43%;
+  margin-left: 62%;
+}
+
+#piggy-bank-2 {
+  margin-top: -23%;
+  margin-left: 52%;
+}
+
+#piggy-bank-3 {
+  margin-top: -20%;
+  margin-left: 27%;
+}

@@ -12,26 +12,7 @@
   position: relative;
   display: inline;
 }
-#statue {
-  position: absolute;
-  left: 17%;
-  bottom: 1%;
-  max-width: 6%;
-}
 
-#samurai {
-  position: absolute;
-  left: 70%;
-  top: 2%;
-  max-width: 6%;
-}
-
-.icon {
-  /*-webkit-animation-iteration-count: infinite;*/
-  &:hover {
-    cursor: pointer;
-  }
-}
 
 .modal-footer button {
   margin-top: 30%;
