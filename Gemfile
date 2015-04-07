@@ -71,3 +71,4 @@ group :development, :test do
   gem 'thin'
 end
 gem 'jquery-turbolinks'
+gem 'devise'
