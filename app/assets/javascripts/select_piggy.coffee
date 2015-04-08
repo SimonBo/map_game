@@ -15,9 +15,8 @@ jQuery ->
       dataType: "json"
       data: {"piggy_bank": {"location": location}}
       error: (jqXHR, textStatus, errorThrown) ->
-        alert 'Dupa!'
+        alert 'Error!'
       success: (data, textStatus, jqXHR) ->
-        alert 'hura'
         $('#message').html('Explore')
         $('#user-info').data('location-chosen', true)
         $('.piggy').hide()

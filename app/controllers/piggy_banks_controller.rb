@@ -11,13 +11,6 @@ class PiggyBanksController < ApplicationController
     end
   end
 
-  def destroy
-    current_user.piggy_banks.first.destroy
-    respond_to do |format|
-      format.js {}
-    end 
-  end
-
   def destroy_all
     current_user.piggy_banks.destroy_all
     # respond_with(@item)
