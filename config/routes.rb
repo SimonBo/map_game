@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :quiz_answers
+
+  resources :quiz_questions
+
   delete 'piggy_banks/destroy_all' => 'piggy_banks#destroy_all'
   resources :piggy_banks
 

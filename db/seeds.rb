@@ -5,3 +5,8 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+question = QuizQuestion.create(content: 'Jak sie nazywa nasz portal?')
+QuizAnswer.create(content: 'Al-Jamari', quiz_question: question)
+QuizAnswer.create(content: 'PolecamPacjenta', quiz_question: question)
+QuizAnswer.create(content: 'ZwrotKosztow', quiz_question: question)
+QuizAnswer.create(content: 'SzkolnaKasa', quiz_question: question, correct: true)

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150407150133) do
+ActiveRecord::Schema.define(version: 20150408080443) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,6 +24,22 @@ ActiveRecord::Schema.define(version: 20150407150133) do
   end
 
   add_index "piggy_banks", ["user_id"], name: "index_piggy_banks_on_user_id", using: :btree
+
+  create_table "quiz_answers", force: :cascade do |t|
+    t.string   "content"
+    t.integer  "quiz_question_id"
+    t.boolean  "correct",          default: false
+    t.datetime "created_at",                       null: false
+    t.datetime "updated_at",                       null: false
+  end
+
+  add_index "quiz_answers", ["quiz_question_id"], name: "index_quiz_answers_on_quiz_question_id", using: :btree
+
+  create_table "quiz_questions", force: :cascade do |t|
+    t.string   "content"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -44,4 +60,5 @@ ActiveRecord::Schema.define(version: 20150407150133) do
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
   add_foreign_key "piggy_banks", "users"
+  add_foreign_key "quiz_answers", "quiz_questions"
 end

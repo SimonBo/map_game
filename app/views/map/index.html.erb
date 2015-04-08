@@ -3,31 +3,48 @@
 <div id="user-info" data-location-chosen="<%= current_user.piggy_banks.any? %>"></div>
 <div class="container-fluid">
   <div class="row">
-      <div id="counter">
-        <div id="modals">
-          <div class="col-sm-4 col-sm-offset-1">
+    <div id="counter">
+      <div id="modals">
+        <div class="col-sm-4 col-sm-offset-1">
           <%= image_tag('http://cliparts.co/cliparts/rcj/Gg7/rcjGg7dKi.jpg', class: '', id: 'modal-character') %>
           <!-- <%= image_tag('tiger.jpeg', class: '', id: 'modal-character') %> -->
-          </div>
-          <div class="col-sm-7">
+        </div>
+        <div class="col-sm-7">
           <div class="bubble text-center">
             <div class="challenge-type"><h1>Wyzwanie</h1></div>
             <div class="challenge-title"></div>
             <div class="challenge-rules"></div>
             <div class="challenge-reward"></div>
+            <div id="quiz-answer-1"></div>
+            <div id="quiz-answer-2"></div>
+            <div id="quiz-answer-3"></div>
+            <div id="quiz-answer-4"></div>
             <button type="button" class="btn btn-primary accept">Akceptuj</button>
             <button type="button" class="btn btn-danger reject">Odrzuć</button>
           </div>
         </div>
-        </div>
-
-
-
-
-<%= render 'icons' %>
+<!--         <div class="col-sm-7 quiz-modal">
+          <div class="bubble bubble-quiz text-center">
+            <div class="quiz-type"><h1>Quiz</h1></div>
+            <div class="quiz-title"></div>
+            <div class="quiz-answwer-1"></div>
+            <div class="quiz-answwer-2"></div>
+            <div class="quiz-answwer-3"></div>
+            <div class="quiz-answwer-4"></div>
+            <div class="quiz-reward"></div>
+            <button type="button" class="btn btn-primary accept">Akceptuj</button>
+            <button type="button" class="btn btn-danger reject">Odrzuć</button>
+          </div>
+        </div> -->
       </div>
+
+
+
+
+      <%= render 'icons' %>
     </div>
   </div>
+</div>
 </div>
 
 
